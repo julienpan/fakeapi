@@ -39,7 +39,7 @@ password: admin
 }
 ```
 
-### PUT
+### POST
 #### Modifier un employé avec son id
 ##### http://localhost:3000/employees/{id}
 <br>
