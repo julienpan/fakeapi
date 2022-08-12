@@ -49,3 +49,67 @@ password: admin
 ##### http://localhost:3000/employees/{id}
 
 
+### PUT
+#### Modifier un employé
+##### Il faut d'abord récupérer l'object employé avec un GET puis la modifier et la passer en paramètres
+##### http://localhost:3000/eployees/{id}
+
+```
+Exemple :
+
+Avant
+
+{
+    "id": 1,
+    "num": "XXX",
+    "firstname": "First name",
+    "lastname": "Last name",
+    "email": "employe1@codingthesmartway.com",
+    "age": "age",
+    "validated": false,
+    "profilImage": "./images/man.png",
+    "materialAssigned": [
+        {
+            "id": 1,
+            "ref": "XX1",
+            "state": "Neuf",
+            "name": "Macbook",
+            "image": "./images/macbook.jpg"
+        },
+        {
+            "id": 2,
+            "ref": "XX2",
+            "state": "Neuf",
+            "name": "SamsungS10",
+            "image": "./images/samsungs10.jpg"
+        }
+    ]
+}
+
+Après 
+
+{
+    "id": 1,
+    "num": "XXX",
+    "firstname": "First name",
+    "lastname": "Last name",
+    "email": "employe1@codingthesmartway.com",
+    "age": "age",
+    "validated": false,
+    "profilImage": "./images/man.png",
+    "materialAssigned": [
+        {
+            "id": 1,
+            "ref": "XX1",
+            "state": "Neuf",
+            "name": "Macbook",
+            "image": "./images/macbook.jpg"
+        }
+    ]
+}
+
+
+
+```
+
+
